@@ -3,8 +3,7 @@
 }
 
 .block {
-    /*display: block;*/
-    /*width: 40%;*/
+    margin: 5px;
 }
 
 .flex-container {
@@ -24,36 +23,76 @@
     border-radius: 20px;
 }
 
-.innerImg{
+.back-position{
+    position:absolute;
+    background: black;
+    height: 150px;
+    opacity: 0.5;
+}
+
+.innerImg {
     padding: 30px;
+}
+
+.skill-font{
+    margin: 0;
+    text-align: center;
+    padding: 4px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
 }
 
 .hide-content {
     /*position: absolute;*/
+    display: none;
 }
 
 .hide-content h3 {
     margin: 0;
 }
 
-.center-header{
+.center-header {
     text-align: center;
 }
 
-.skill-mini-header{
-    border-bottom: 1px solid black;
+.skill-mini-header {
+    /* border-bottom: 1px solid black; */
+    /* border-bottom: solid 3px #f56a6a; */
     padding-bottom: 20px;
     margin-bottom: 60px;
 }
 
-.none-font{
+.none-font {
     font-family: none;
 }
+
+.none-font li a {
+    font-family: none;
+}
+
+.none-font li span {
+    font-family: none;
+    font-weight: bold;
+}
+
+.skill-mini-header-top-div {
+    width: 70%;
+    display: inline-block;
+}
+
+
+/* hover */
+#skill-img:hover > #backSkillImg{
+    display:block;
+}
+
+
 
 
 /*반응형*/
 
-@media (max-width: 380px) {
+@media (max-width: 374px) {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
